@@ -1,33 +1,72 @@
 :root {
-    --h-header: 100px;
-    --w-aside: 100px;
+    --h-header: 70px;
+    --w-aside: 70px;
+  
+    --clr-light-gray: #E5E5E5;
   }
+  
 
-
-body {
+  .debug {
+    border: 1px solid black;
+    min-height: 50px;
+    background: rgba(0, 128, 0, 0.2);
+  }
+  
+  .as_w-40 {
+    width: 40%;
+  }
+  
+  /* general */
+  body {
     font-family: "Roboto", sans-serif;
     height: 100vh;
-    border: dashed;
-}
-
-header {
+  }
+  
+  /* header */
+  header {
     height: var(--h-header);
-    background-color: pink;
-    border: dashed;
-}
-
-main {
+  }
+  
+  header img {
+    width: 50px;
+  }
+  
+  header .as_glass-icon,
+  input {
+    background-color: var(--clr-light-gray);
+  }
+  
+  /* main */
+  main {
     height: calc(100% - var(--h-header));
-    border: dashed;
-}
-
-.aside_main-contents {
+  }
+  
+  .as_main-contents {
     width: calc(100% - var(--w-aside));
-    background-color: greenyellow;
-}
-
-aside {
+    overflow: auto;
+  }
+  
+  aside {
     width: var(--w-aside);
-    background-color: blue;
-    border: dashed;
-}
+    background-color: #051E34;
+    background-image: url('../img/sidebar-bg.png');
+  }
+  
+  aside .as_aside-icons:hover {
+    background-color: rgba(255, 255, 255, 0.367);
+    cursor: pointer;
+  }
+  
+  
+ /* media query */
+  @media (min-width: 768px) {
+    body {
+      --w-aside: 75px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    body {
+      --w-aside: 150px;
+    }
+  }
