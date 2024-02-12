@@ -1,0 +1,33 @@
+:root {
+    --h-header: 100px;
+    --w-aside: 100px;
+  }
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+    border: dashed;
+}
+
+header {
+    height: var(--h-header);
+    background-color: pink;
+    border: dashed;
+}
+
+main {
+    height: calc(100% - var(--h-header));
+    border: dashed;
+}
+
+.aside_main-contents {
+    width: calc(100% - var(--w-aside));
+    background-color: greenyellow;
+}
+
+aside {
+    width: var(--w-aside);
+    background-color: blue;
+    border: dashed;
+}
