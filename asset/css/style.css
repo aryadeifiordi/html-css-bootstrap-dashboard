@@ -6,12 +6,6 @@
 }
 
 
-.debug {
-    border: 1px solid black;
-    min-height: 50px;
-    background: rgba(0, 128, 0, 0.2);
-}
-
 .as_w-40 {
     width: 40%;
 }
@@ -45,7 +39,7 @@ main {
     width: calc(100% - var(--w-aside));
     overflow: auto;
 }
-
+/* aside */
 aside {
     width: var(--w-aside);
     background-color: #051E34;
@@ -56,8 +50,51 @@ aside .as_aside-icons:hover {
     background-color: rgba(255, 255, 255, 0.367);
     cursor: pointer;
 }
-
-
+/* info */
+.as_students-infos .badge{
+    background-color: #165BBA;
+    font-size: 1 rem;
+}
+/* table */
+table img {
+    width: 30px;
+  }
+  
+  
+  table tr:hover td {
+    background-color: #F7F7F7;
+  }
+  
+  table th:not(:first-child),
+  table td:not(:first-child) {
+    text-align: center;
+  }
+  
+  table th:nth-child(2),
+  table td:nth-child(2), 
+  table th:nth-child(3),
+  table td:nth-child(3) {
+    display: none;
+  }
+  
+  .as_th-start-date {
+    width: 160px;
+  }
+  
+  .as_th-status {
+    width: 120px;
+  }
+  
+  .as_th-actions {
+    width: 120px;
+  }
+  
+  .action{
+    border: 1px solid gray;
+    color: gray;
+    border-radius: 10%;
+    padding: 5px;
+  }
 /* media query */
 @media (min-width: 768px) {
     body {
