@@ -1,72 +1,72 @@
 :root {
     --h-header: 70px;
     --w-aside: 70px;
-  
-    --clr-light-gray: #E5E5E5;
-  }
-  
 
-  .debug {
+    --clr-light-gray: #E5E5E5;
+}
+
+
+.debug {
     border: 1px solid black;
     min-height: 50px;
     background: rgba(0, 128, 0, 0.2);
-  }
-  
-  .as_w-40 {
+}
+
+.as_w-40 {
     width: 40%;
-  }
-  
-  /* general */
-  body {
+}
+
+/* general */
+body {
     font-family: "Roboto", sans-serif;
     height: 100vh;
-  }
-  
-  /* header */
-  header {
+}
+
+/* header */
+header {
     height: var(--h-header);
-  }
-  
-  header img {
+}
+
+header img {
     width: 50px;
-  }
-  
-  header .as_glass-icon,
-  input {
+}
+
+header .as_glass-icon,
+input {
     background-color: var(--clr-light-gray);
-  }
-  
-  /* main */
-  main {
+}
+
+/* main */
+main {
     height: calc(100% - var(--h-header));
-  }
-  
-  .as_main-contents {
+}
+
+.as_main-contents {
     width: calc(100% - var(--w-aside));
     overflow: auto;
-  }
-  
-  aside {
+}
+
+aside {
     width: var(--w-aside);
     background-color: #051E34;
-    background-image: url('../img/sidebar-bg.png');
-  }
-  
-  aside .as_aside-icons:hover {
+    background-image: url(./asset/img/sidebar-bg.png);
+}
+
+aside .as_aside-icons:hover {
     background-color: rgba(255, 255, 255, 0.367);
     cursor: pointer;
-  }
-  
-  
- /* media query */
-  @media (min-width: 768px) {
+}
+
+
+/* media query */
+@media (min-width: 768px) {
     body {
-      --w-aside: 75px;
+        --w-aside: 75px;
     }
-  }
-  
-  @media (min-width: 1200px) {
+}
+
+@media (min-width: 1200px) {
     body {
-      --w-aside: 150px;
+        --w-aside: 150px;
     }
-  }
+}
